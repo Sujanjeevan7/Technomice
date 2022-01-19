@@ -1,3 +1,42 @@
-.h1 {
+.title {
     color: black;
+    font-weight: 450;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 0.5cm;
+    margin-top: 1cm;
+    text-overflow: clip;
+
+}
+
+.p1 {
+    color: rgb(43, 41, 41);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    text-align: justify;
+    margin-left: 1cm;
+    
+}
+.pomodoro{
+    margin-left: 1cm;
+}
+.header{
+    margin-top:10px;
+    margin-bottom: 100px;
+}
+.headerline {
+    font-style: normal;
+    color: rgb(82, 82, 82);
+    font-size: 35px;
+    
+    
+}
+
+.headerline2 {
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    
+    
 }
