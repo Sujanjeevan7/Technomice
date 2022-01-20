@@ -3,7 +3,7 @@
     font-weight: 450;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 0.5cm;
+    margin-left: 3cm;
     margin-top: 1cm;
     text-overflow: clip;
 
@@ -19,7 +19,7 @@
     
 }
 .pomodoro{
-    margin-left: 1cm;
+    margin-left: 5cm;
 }
 .header{
     margin-top:10px;
@@ -39,4 +39,22 @@
     font-size: 35px;
     
     
+}
+.footerp1{
+    text-align: justify;
+    color: blanchedalmond;
+    font-weight: bold;
+}
+.add{
+    text-align: justify;
+    font-size: 18px;
+    color: antiquewhite;
+    margin-left: 0.5cm;
+    font-weight: lighter;
+}
+.margin{
+    margin-left: 0.3cm;
+    font-size: 22px;
+    font-weight: normal;
+    color: beige;
 }
