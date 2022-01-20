@@ -5,12 +5,15 @@
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
+<body onload="myFunction()">
     <div id="game">
         <div id="block"></div>
         <div id="hole"></div>
         <div id="character"></div>
     </div>
+
+    <center><h1><span class="scoreTxt">SCORE:</span> <span id="score">0</span> | <span class="timeTxt">TIME REMAINING:</span> <span id="time">05:00</span></h1></center>
+    <center class="help"><h3>GO THROUGH WHITE SPACE AND DON'T HIT ON BLACK TOWERS / GROUND</h3></center>
 </body>
 <script src="../JS/script.js"></script>
 </html>

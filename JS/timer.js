@@ -1,4 +1,9 @@
 function startTimer(duration, display) {
+    const audio = document.querySelector("audio");
+    audio.volume = 0.5;
+    audio.loop = true;
+    audio.play();
+
     var timer = duration, minutes, seconds;
     
     setInterval(function () {
@@ -12,6 +17,7 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = 0;
+            window.location.href = "../Pages/funTime.html";
         }
     }, 1000);
 }

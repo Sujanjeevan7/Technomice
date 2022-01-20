@@ -18,12 +18,12 @@
 .timer{
 	font-family: sans-serif;
 	display: inline-block;
-	padding: 24px 32px;
+	padding: 48px 128px;
 	border-radius: 40px;
 	background: #ffff-(0,255,255,255,);
 	margin: 0;
 	position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -34,8 +34,8 @@
 }
 
 .timer__part{
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 70px;
+	font-weight: normal;
 	color: #fff;
 	opacity: 100;
 }
@@ -44,10 +44,10 @@
   background-color: #04AA6D;
   border: none;
   border-radius: 20px;
-  left: 4%;
-  font-size: 30px;
+  left: 0%;
+  font-size: 5px;
   color: #FFFFFF;
-  padding: 20px;
+  padding: 50px;
   width: 80px;
   height: 80px;
   text-align: center;
@@ -68,12 +68,12 @@
 }
 .timer__btn:after {
   content: "";
-  background: #fff;
+  background: rgb(0, 0, 0);
   display: block;
   position: absolute;
   padding-top: 300%;
   padding-left: 350%;
-  margin-left: -20px!important;
+  margin-left: -10px!important;
   margin-top: -120%;
   opacity: 0;
   transition: all 0.8s
@@ -323,4 +323,7 @@
 	
 	
 	
+}
+.material-icons{
+	text-align:center ;
 }

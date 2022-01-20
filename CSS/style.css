@@ -2,10 +2,33 @@
     padding: 0;
     margin: 0;
 }
+body{
+  background-image: url("../Assets/Images/game_bg.jpeg");
+  background-color: #cccccc
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1,h3{
+  margin-top: 25px;
+  color: white;
+  padding: 10px 0px 10px 0px;
+}
+.help{
+  background-color: black;
+}
+.scoreTxt{
+ color: yellow;
+ text-shadow: 2px 2px 5px red;
+}
+.timeTxt{
+ color: red;
+}
 #game{
     width: 400px;
     height: 500px;
-    border: 1px solid black;
+    border: 5px solid black;
     margin: auto;
     overflow: hidden;
 }
@@ -38,21 +61,3 @@
     top: 100px;
     border-radius: 50%;
 }
-.timer__btn{
-    position: relative;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 20px;
-    left: 4%;
-    font-size: 30px;
-    color: #FFFFFF;
-    padding: 20px;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    animation: mymovement 0.5s infinite;

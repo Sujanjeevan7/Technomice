@@ -7,8 +7,11 @@ var counter = 0;
 hole.addEventListener('animationiteration', () => {
     var random = -((Math.random()*300)+150);
     hole.style.top = random + "px";
+
+    document.querySelector('#score').textContent = "" + (counter);
     counter++;
 });
+
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
@@ -18,7 +21,7 @@ setInterval(function(){
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500-characterTop);
     if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
-        alert("Game over. Score: "+(counter-1));
+        alert("Game over!");
         character.style.top = 100 + "px";
         counter=0;
     }
@@ -39,4 +42,26 @@ function jump(){
         }
         jumpCount++;
     },10);
+}
+
+window.onload = function(){
+  startTimer(10, document.querySelector('#time'));
+};
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+            window.location.href = "../Pages/Timer.html";
+        }
+    }, 1000);
 }
