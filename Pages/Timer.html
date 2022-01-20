@@ -11,12 +11,10 @@
 	<body>
 		<div class="banner">
 		<div class="timer">
-		<span class="timer__part timer__part--minutes" id="timer">01</span>
-		<span class="timer__part">:</span>
-		<span class="timer__part timer__part--seconds">00</span>
+		<span class="timer__part timer__part--minutes" id="time">25:00</span>
 		
-		<button type="button" onclick="startTimer(60, document.querySelector('#time'))" class="timer__btn timer__btn--control timer__btn--start" >
-		<span class="material-icons" onclick="startTimer(60, document.querySelector('#time'))">play_arrow</span>
+		<button type="button" onclick="startTimer(1500, document.querySelector('#time'))" class="timer__btn timer__btn--control timer__btn--start" >
+		<span class="material-icons">play_arrow</span>
 		</button>
 		
 		<button type="button" class="timer__btn timer__btn--reset">
