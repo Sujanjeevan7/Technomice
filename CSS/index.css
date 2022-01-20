@@ -58,3 +58,12 @@
     font-weight: normal;
     color: beige;
 }
+.banner{
+    width: 100vh;
+	height: 100%;
+	background-image: url(../Assets/Images/index/bg\ image.jpg);
+	background-size: cover;
+	background-position: center;
+	
+	
+}
